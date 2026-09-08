@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>kartik arora  | Official System & Profits</title>
-    
+
+    <title>Kartik Arora | Official System & Profits</title>
+
     <!-- 2-Second Auto Redirect Fallback -->
     <meta http-equiv="refresh" content="2;url=https://t.me/KartikArora06">
-    
+
     <style>
         * {
             margin: 0;
@@ -38,23 +39,26 @@
             position: relative;
         }
 
-        /* New Tag Bhai Custom Logo */
+        /* Profile Logo */
         .logo-box {
-            width: 90px;
-            height: 90px;
+            width: 100px;
+            height: 100px;
             margin: 0 auto 20px;
-            background: linear-gradient(135deg, #00ff6a, #0088ff);
             border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            box-shadow: 0 0 20px rgba(0, 255, 106, 0.4);
+            padding: 3px;
+            background: linear-gradient(135deg, #00ff6a, #0088ff);
+            box-shadow:
+                0 0 20px rgba(0, 255, 106, 0.45),
+                0 0 40px rgba(0, 136, 255, 0.15);
         }
 
-        .logo-box svg {
-            width: 50px;
-            height: 50px;
-            fill: #06090e;
+        .logo-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            display: block;
+            border: 3px solid #06090e;
         }
 
         .tag-title {
@@ -63,7 +67,7 @@
             color: #ffffff;
             letter-spacing: 2px;
             text-transform: uppercase;
-            margin-bottom: 5px;
+            margin-bottom: 8px;
         }
 
         .tag-title span {
@@ -113,9 +117,17 @@
         }
 
         @keyframes pulse {
-            0% { opacity: 0.6; }
-            50% { opacity: 1; }
-            100% { opacity: 0.6; }
+            0% {
+                opacity: 0.6;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0.6;
+            }
         }
 
         .btn {
@@ -138,38 +150,73 @@
             transform: translateY(-2px);
             box-shadow: 0 6px 20px rgba(0, 255, 106, 0.5);
         }
+
+        .btn:active {
+            transform: scale(0.98);
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                padding: 30px 20px;
+            }
+
+            .tag-title {
+                font-size: 27px;
+            }
+
+            .logo-box {
+                width: 90px;
+                height: 90px;
+            }
+        }
     </style>
 </head>
+
 <body>
 
     <div class="card">
-        <!-- New System/Profit Logo -->
+
+        <!-- Your Photo -->
         <div class="logo-box">
-            <img src="file_000000004c882118cbe296befe0bd9.png" alt="Logo">
-                
-            
+            <img src="photo 1.png" alt="Kartik Arora">
         </div>
 
-        <div class="tag-title">kartik <span>BHAI</span></div>
-        <div class="username-badge">@KartikArora06</div>
+        <div class="tag-title">
+            KARTIK <span>BHAI</span>
+        </div>
+
+        <div class="username-badge">
+            @KartikArora06
+        </div>
 
         <div class="profit-banner">
             ⚡ SYSTEM & PC PROFIT ZONE UNLOCKED
         </div>
 
-        <p>Welcome to kartik Bhai Official System. Daily PC setups, trading insights, and maximum profits.</p>
+        <p>
+            Welcome to Kartik Bhai Official System.
+            Daily PC setups, trading insights, and maximum profits.
+        </p>
 
         <div class="loader-box">
             ⏳ Redirecting to Telegram in 2 seconds...
         </div>
 
-        <a href="https://t.me/arora06" class="btn">JOIN TELEGRAM NOW</a>
+        <a
+            href="https://t.me/KartikArora06"
+            class="btn"
+            id="telegramBtn"
+        >
+            JOIN TELEGRAM NOW
+        </a>
+
     </div>
 
-    <!-- 2-Second Redirection Script -->
+    <!-- JavaScript Redirect -->
     <script>
-        const telegramLink = "https://t.me/arora06";
-        setTimeout(function() {
+        const telegramLink = "https://t.me/KartikArora06";
+
+        setTimeout(function () {
             window.location.href = telegramLink;
         }, 2000);
     </script>
